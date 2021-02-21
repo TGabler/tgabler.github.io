@@ -1,22 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-</head>
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: '',
-      repo: ''
-    }
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="description" content="Description" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+        />
+        <!-- Theme: Simple -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"
+        />
+
+        <style>
+        </style>
+    </head>
+        <div id="app"></div>
+        <script>
+            window.$docsify = {
+                name: "Test documentation",
+                repo: "https://github.com/TGabler/lightning-learning-cards",
+                themeable: {
+                    readyTransition: true,
+                    responsiveTables: true,
+                },
+                search: {
+                    placeholder: "Search...",
+                    hideOtherSidebarContent: true,
+                },
+                tabs: {
+                    persist: true, // default
+                    sync: true, // default
+                    theme: "classic", // default
+                    tabComments: true, // default
+                    tabHeadings: true, // default
+                },
+                loadNavbar: true,
+                formatUpdated: '{DD}.{MM}.{YYYY} {HH}:{mm}',
+                loadSidebar: true,
+                subMaxLevel: 3,
+            };
+            mermaid.initialize({ startOnLoad: false });
+        </script>
+        <!-- Docsify v4 -->
+        <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+        <!-- Search -->
+        <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+        <!-- Zoom Image? see more https://docsify.js.org/#/plugins?id=zoom-image -->
+        <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+        <!-- Copy to clipboard -->
+        <script src="//unpkg.com/docsify-copy-code"></script>
+        <!-- Mermaid -->
+        <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
+        <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
+        <!-- Emoji -->
+        <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+        <!-- Pagination check later-->
+        <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+        <!-- docsify Tabs (latest v4.x.x)-->
+        <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+        <!-- Alert/warnings -->
+        <script src="//unpkg.com/docsify-plugin-flexible-alerts"></script>
+        <!-- prism -->
+        <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-java.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-apex.js"></script>
+    </body>
 </html>
